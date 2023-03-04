@@ -38,6 +38,7 @@ dependencies:
   google_fonts: ^4.0.3
   flutter_downloader: ^1.10.2
   flutter_svg: ^2.0.2
+  firebase_core: ^2.7.0
 
 dev_dependencies:
   flutter_test:
