@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:portfolio_site/data.dart';
 import 'package:portfolio_site/home_page.dart';
 
@@ -11,9 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: kName,
-      home: const HomeScreen(),
+    return ScreenUtilInit(
+      designSize: const Size(1245, 1046),
+      builder: (context, child) {
+        return MaterialApp(
+          title: kName,
+          home: const HomeScreen(),
+        );
+      },
     );
   }
 }
